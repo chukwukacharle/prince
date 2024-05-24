@@ -1,0 +1,36 @@
+{% extends "SchoolWeb/base.html" %}
+{% load static %}
+{% block title %}LOGIN{% endblock title %}
+{% block content %}
+<style>
+    body{
+        background-image:url(/static/Image/loginIMG1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
+    .logininput{
+        background-image: url(/static/Image/loginIMG2.jpg); 
+        display: inline-block;
+        border-radius: 10%;
+        margin-top: 17%;
+        margin-left: 35%;
+    }
+    input{
+        border-radius: 15%;
+    }
+</style>
+<body>
+
+    <div class="logininput"> 
+    <center><form> 
+        <h1 style="color: rgb(182, 182, 237);">LOGIN PAGE</h1>
+        <input   type="text" placeholder="Username" size="25" class="form-control mb 3"><br><br>
+        <input  type="password" placeholder="Password" size="50" class="form-control mb 3"> <br>  
+        <a href="#">forgot password?</a>
+        <br><br><br>
+        <button style="background-color: rgb(52, 2, 61)"><a href="home" style="text-decoration: none;">LOGIN</a></button>
+            </form></center> 
+    </div>
+</body>
+
+{% endblock content %} 

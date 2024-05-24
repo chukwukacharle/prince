@@ -1,0 +1,96 @@
+{% extends "SchoolWeb/base.html" %}
+{% load static %}
+{% block title %}COURSES{% endblock title %} 
+{% block content %}
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        box-sizing: border-box;
+    }   
+    ul{
+        text-align: center;
+        background-color: white;
+        background-image: url(/static/Image/gsIMG.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+    ul li{
+        display: inline-block;
+        padding-top: 90px;
+       padding-bottom: 6%;
+    }
+    ul li a{
+        color: white;
+        background-color: rgb(5, 117, 58);
+        padding: 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    ul li a:hover{
+        color: rgb(12, 12, 12);
+        background-color: rgb(185, 201, 8); 
+    }
+    .header{
+        color: blue; 
+        text-align: center;
+    }
+</style>
+<body style="background-color:rgb(250, 209, 159)">
+<div>
+    <ul>
+        <li><a href="{% url 'school:home' %}">Home</a></li> 
+        <li><a href="{% url 'school:courses' %}">Courses</a></li>
+        <li><a href="{% url 'school:feedback' %}">Feedback</a></li> 
+        <li><a href="{% url 'school:data' %}">data</a></li> 
+        <li><a href="{% url 'school:post' %}">post</a></li>
+        <li><a href="{% url 'school:addpost' %}">addpost</a></li> 
+    </ul> <br><br><br> 
+</div>  
+<center>  
+    <h1 class="header">WHAT WE OFFER!</h1><br><br>
+    <h1 class="header">MEDICINE</h1>
+    <img src="{% static 'Image/IMG3.jpg' %}" alt="picture of medicine materials" height="400" width="600"> 
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Facere, explicabo officiis quae necessitatibus aliquid officia, tempora qui ab eaque eveniet, 
+            inventore earum expedita impedit cumque rerum dolore nulla omnis sit.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Facere, explicabo officiis quae necessitatibus aliquid officia, tempora qui ab eaque eveniet, 
+            inventore earum expedita impedit cumque rerum dolore nulla omnis sit.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Facere, explicabo officiis quae necessitatibus aliquid officia, tempora qui ab eaque eveniet, 
+            inventore earum expedita impedit cumque rerum dolore nulla omnis sit.
+        </p>
+        <h1 class="header">COMPUTER SCIENCE</h1>
+        <img src="{% static 'Image/IMG4.jpg' %}" alt="picture of computer science" height="400" width="600"> 
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Facere, explicabo officiis quae necessitatibus aliquid officia, tempora qui ab eaque eveniet, 
+            inventore earum expedita impedit cumque rerum dolore nulla omnis sit.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Facere, explicabo officiis quae necessitatibus aliquid officia, tempora qui ab eaque eveniet, 
+            inventore earum expedita impedit cumque rerum dolore nulla omnis sit.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Facere, explicabo officiis quae necessitatibus aliquid officia, tempora qui ab eaque eveniet, 
+            inventore earum expedita impedit cumque rerum dolore nulla omnis sit.
+        </p>
+        <h1 class="header">LAW</h1>
+        <img src="{% static 'Image/IMG5.jpg' %}" alt="law materials" height="400" width="600"> 
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Facere, explicabo officiis quae necessitatibus aliquid officia, tempora qui ab eaque eveniet, 
+            inventore earum expedita impedit cumque rerum dolore nulla omnis sit.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Facere, explicabo officiis quae necessitatibus aliquid officia, tempora qui ab eaque eveniet, 
+            inventore earum expedita impedit cumque rerum dolore nulla omnis sit.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Facere, explicabo officiis quae necessitatibus aliquid officia, tempora qui ab eaque eveniet, 
+            inventore earum expedita impedit cumque rerum dolore nulla omnis sit.
+        </p>
+</center>
+</div>
+</body>
+
+{% endblock content %}

@@ -1,0 +1,57 @@
+{% extends "SchoolWeb/base.html" %}
+{% load static %}
+{% block title %}FEEDBACK{% endblock title %}
+{% block content %}
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        box-sizing: border-box;
+    }   
+    ul{
+        text-align: center;
+        background-color: white;
+        background-image: url(/static/Image/gsIMG.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+    ul li{
+        display: inline-block;
+        padding-top: 90px;
+       padding-bottom: 6%;
+    }
+    ul li a{
+        color: white;
+        background-color: rgb(5, 117, 58);
+        padding: 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    ul li a:hover{
+        color: rgb(12, 12, 12);
+        background-color: rgb(185, 201, 8); 
+    }
+    .header{
+        color: brown;
+        text-align: center;
+    }
+</style>
+<body style="background-color: orange;"></body>
+<ul>
+    <li><a href="{% url 'school:home' %}">Home</a></li> 
+    <li><a href="{% url 'school:courses' %}">Courses</a></li>
+    <li><a href="{% url 'school:feedback' %}">Feedback</a></li> 
+    <li><a href="{% url 'school:data' %}">Data</a></li>  
+    <li><a href="{% url 'school:post' %}">post</a></li>
+    <li><a href="{% url 'school:addpost' %}">addpost</a></li> 
+</ul> <br><br><br>
+<h1 class="header">WE WOULD TO HEAR FROM YOU!</h1>
+
+<center><textarea name="" id="" cols="50" rows="20"></textarea><br>   
+          <input type="submit">
+</center><br><br>
+<h1 class="header">OUR LOCATION!</h1>
+<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15759.870507128675!2d7.4631486!3d9.0667137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b1e59185243%3A0x7bb527554471700c!2sWuse%20Shopping%20Plaza!5e0!3m2!1sen!2sng!4v1706507548810!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+</body>
+{% endblock content %}

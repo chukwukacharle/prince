@@ -1,0 +1,136 @@
+{% extends "SchoolWeb/base.html" %}
+{% load static %}
+{% block title %}HOME{% endblock title %}
+{% block content %}
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        box-sizing: border-box;
+    }
+    ul{
+        text-align: center;
+        background-image: url(/static/Image/gsIMG.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: white;
+        }
+    ul li{
+        display: inline-block;
+        padding-top: 90px;
+        padding-bottom: 6%;
+    }
+    ul li a{
+        color: rgb(250, 249, 249); 
+        background-color: rgb(5, 131, 26);
+        padding: 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        
+    }
+    ul li a:hover{
+        color: rgb(12, 12, 12);
+        background-color: rgb(223, 240, 61); 
+    }
+    body{
+        background-color: aquamarine; 
+    } 
+
+</style>
+<body>
+<div>   
+<ul>
+    <li><a href="{% url 'school:home' %}">Home</a></li> 
+    <li><a href="{% url 'school:courses' %}">Courses</a></li>
+    <li><a href="{% url 'school:feedback' %}">Feedback</a></li>
+    <li><a href="{% url 'school:data' %}">Data</a></li> 
+    <li><a href="{% url 'school:post' %}">post</a></li>
+    <li><a href="{% url 'school:addpost' %}">addpost</a></li> 
+</ul> <br>
+</div> 
+<center>   
+<h1 style="color: brown;">WHY YOU SHOULD CHOOSE GSKILLS UNIVERSITY</h1> 
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+</p>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptas officia, soluta accusantium delectus odio reiciendis facilis, labore neque ipsa
+     amet esse saepe possimus eveniet quia accusamus laborum est perferendis similique.
+</p>
+
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quibusdam similique,
+     molestias earum ab asperiores
+     natus nisi ad eum perferendis ex incidunt vero doloremque alias, porro iste voluptatibus? Nemo, necessitatibus?
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quibusdam similique,
+     molestias earum ab asperiores
+     natus nisi ad eum perferendis ex incidunt vero doloremque alias, porro iste voluptatibus? Nemo, necessitatibus?
+</p>
+</center>
+
+{% endblock content %}
